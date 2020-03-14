@@ -1,19 +1,23 @@
 var Links = {
   setColor:function(color){
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color = color;
-      i = i + 1;
-  }
+  //   var alist = document.querySelectorAll('a');
+  //   var i = 0;
+  //   while(i < alist.length){
+  //     alist[i].style.color = color;
+  //     i = i + 1;
+  // }
+  //$는 jquery
+  $('a').css('color',color);
 }
 }
 var body = {
   setColor:function(color){
-    var target = document.querySelector('body').style.color=color;
-  }, <!-- 객체는 객체의 property를 구별할떄 ,를 찍어야한다.-->
+    // var target = document.querySelector('body').style.color=color;
+    $('body').css('color',color);
+  }, //<!-- 객체는 객체의 property를 구별할떄 ,를 찍어야한다.-->
   setBackgroundColor:function(color){
-    var target = document.querySelector('body').style.backgroundColor=color;
+    // var target = document.querySelector('body').style.backgroundColor=color;
+    $('body').css('backgroundColor',color);
   }
 }
 
