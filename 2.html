@@ -15,18 +15,30 @@
   </head>
   <body>
     <h1><a href="index.html">Research</a></h1>
-    <ol>
-      <li><a href="1.html">Chatbot</a></li>
-      <li><a href="2.html">NLP</a></li>
-      <li><a href="3.html">Journey Map</a></li>
-    </ol>
-    <ul>
-      <li>Author name : soojin Hwang</li>
-      <li>Contact : soojin.hwang@yonsei.ac.kr</li>
-    </ul>
-    <h2>NLP</h2>
-    <p>A <a href="https://www.nngroup.com/articles/journey-mapping-101/" target="_blank" title="journey map site">journey map</a> is a visualization of the process that a person goes through in order to accomplish a goal.</p>
-    <img src="chatbot.png" width="800px">
-    <p>The terms 'user journey map' and 'customer journey map' can be used interchangeably. Both reference a visualization of a person using your product or service</P
+    <input type="button" value="Night" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="Day" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    ">
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">Chatbot</a></li>
+        <li><a href="2.html">NLP</a></li>
+        <li><a href="3.html">Journey Map</a></li>
+      </ol>
+      <ul>
+        <li>Author name : soojin Hwang</li>
+        <li>Contact : soojin.hwang@yonsei.ac.kr</li>
+      </ul>
+      <div id="article">
+        <h2>NLP</h2>
+        <p>A <a href="https://www.nngroup.com/articles/journey-mapping-101/" target="_blank" title="journey map site">journey map</a> is a visualization of the process that a person goes through in order to accomplish a goal.</p>
+        <img src="chatbot.png" width="800px">
+        <p>The terms 'user journey map' and 'customer journey map' can be used interchangeably. Both reference a visualization of a person using your product or service</p>
+      </div>
+    </div>
   </body>
 </html>
